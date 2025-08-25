@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: white;
+  position: relative;
+}
+.top-bar {
+  background-color: black;
+  color: white;
+  padding: 12px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  position: relative;
+}
+.lang-selector {
+  position: absolute;
+  right: 0;
+  padding-right: 5px;
+}
+
+.top-bar p a {
+  padding-left: 10px;
+  font-weight: 600;
+  color: white;
+}
+.lang-selector select {
+  margin-right: 0;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.navbar {
+  padding-top: 30px;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-name {
+  transform: translateY(-10px);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+}
+
+#nav-home {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: gray;
+}
+
+.search-and-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar {
+  position: relative;
+  display: inline-block;
+}
+
+.search-bar input {
+  padding: 5px 40px 5px 0px;
+  font-size: 14px;
+  border: none;
+  background-color: lightgray;
+  border-radius: 2px;
+}
+
+.material-symbols-outlined {
+  color: black;
+}
+.search-bar .material-symbols-outlined {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+  text-decoration-color: lightgray;
+  text-decoration-thickness: 2px;
+}

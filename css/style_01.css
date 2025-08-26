@@ -10,6 +10,8 @@ body {
   background-color: white;
   position: relative;
 }
+
+/* Top bar: */
 .top-bar {
   background-color: black;
   color: white;
@@ -20,6 +22,7 @@ body {
   gap: 100px;
   position: relative;
 }
+
 .lang-selector {
   position: absolute;
   right: 0;
@@ -31,6 +34,7 @@ body {
   font-weight: 600;
   color: white;
 }
+
 .lang-selector select {
   margin-right: 0;
   background-color: black;
@@ -38,9 +42,14 @@ body {
   color: white;
 }
 
+/* Nav bar: */
+.header {
+  border-bottom: 2px solid grey;
+  padding: 0 5%;
+}
+
 .navbar {
   padding-top: 30px;
-  border-bottom: 1px solid grey;
   display: flex;
   justify-content: space-between;
 }
@@ -91,6 +100,7 @@ body {
 .material-symbols-outlined {
   color: black;
 }
+
 .search-bar .material-symbols-outlined {
   position: absolute;
   right: 0;
@@ -102,3 +112,83 @@ body {
   text-decoration-color: lightgray;
   text-decoration-thickness: 2px;
 }
+
+/* Content: */
+.content {
+  display: flex;
+}
+.sidebar {
+  display: flex;
+  width: 25%;
+  flex-direction: row;
+  border-right: 2px solid gray;
+  padding: 2% 0 0 5%;
+}
+
+.side-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.side-menu li {
+  width: 100%;
+  list-style: none;
+}
+
+.side-menu li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.side-menu .material-symbols-outlined {
+  position: absolute;
+  bottom: -2px;
+  right: 2px;
+}
+
+.hero-section {
+  width: 75%;
+  padding: 2% 5% 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content {
+  background-color: black;
+  margin-left: 5%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.hero-text {
+  padding-top: 5%;
+}
+
+.hero-pagination {
+  display: flex;
+  margin-top: -20px;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: orangered;
+}
+
+/* Footer */

@@ -11,7 +11,7 @@
     />
   </head>
   <body>
-    <header class="top-bar">
+    <section class="top-bar">
       <p>
         Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
         <a href="#">Shop Now</a>
@@ -22,40 +22,47 @@
           <option value="vi">Vietnam</option>
         </select>
       </div>
-    </header>
-<hr class="line">
-    <nav class="navbar">
-      <div class="brand-name">
-        <h1>Exclusive</h1>
-      </div>
-      <ul class="nav-links">
-        <li><a id="nav-home" href="#">Home</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Sign Up</a></li>
-      </ul>
-      <div class="search-and-icons">
-        <div class="search-bar">
-          <input type="text" placeholder="What are you looking for?" />
-          <span class="material-symbols-outlined"> search </span>
+    </section>
+    <header class="header">
+      <nav class="navbar">
+        <div class="brand-name">
+          <h1>Exclusive</h1>
         </div>
-        <a href="#">
-          <span class="material-symbols-outlined"> favorite </span>
-        </a>
-        <a href="#">
-          <span class="material-symbols-outlined"> shopping_cart </span>
-        </a>
-      </div>
-    </nav>
+        <ul class="nav-links">
+          <li><a id="nav-home" href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+        <div class="search-and-icons">
+          <div class="search-bar">
+            <input type="text" placeholder="What are you looking for?" />
+            <span class="material-symbols-outlined"> search </span>
+          </div>
+          <a href="#">
+            <span class="material-symbols-outlined"> favorite </span>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined"> shopping_cart </span>
+          </a>
+        </div>
+      </nav>
+    </header>
 
-    <main class="content-wrapper">
+    <main class="content">
       <aside class="sidebar">
-        <ul>
+        <ul class="side-menu">
           <li>
-            <a href="#">Woman's Fashion <i class="fas fa-chevron-right"></i></a>
+            <a href="#">
+              Woman's Fashion
+              <span class="material-symbols-outlined"> chevron_right </span>
+            </a>
           </li>
           <li>
-            <a href="#">Men's Fashion <i class="fas fa-chevron-right"></i></a>
+            <a href="#">
+              Men's Fashion
+              <span class="material-symbols-outlined"> chevron_right </span>
+            </a>
           </li>
           <li><a href="#">Electronics</a></li>
           <li><a href="#">Home & Lifestyle</a></li>
@@ -70,17 +77,12 @@
       <section class="hero-section">
         <div class="hero-content">
           <div class="hero-text">
-            <p class="brand-name">
-              <i class="fab fa-apple"></i>
-              iPhone 14 Series
-            </p>
+            <p class="brand-name">iPhone 14 Series</p>
             <h2>Up to 10%<br />off Voucher</h2>
-            <a href="#" class="shop-now-btn">
-              Shop Now <i class="fas fa-arrow-right"></i>
-            </a>
+            <a href="#" class="shop-now-btn"> Shop Now </a>
           </div>
           <div class="hero-image">
-            <img src="path/to/your/image.png" alt="iPhone 14 Series" />
+            <img src="https://picsum.photos/200/300" alt="" />
           </div>
         </div>
         <div class="hero-pagination">
@@ -93,9 +95,91 @@
       </section>
     </main>
 
-    <script
-      src="https://kit.fontawesome.com/your-font-awesome-kit.js"
-      crossorigin="anonymous"
-    ></script>
+    <footer>
+      <div class="footer-container">
+        <section class="footer-column brand-and-subscribe">
+          <h2>Exclusive</h2>
+          <h3>Subscribe</h3>
+          <p>Get 10% off your first order</p>
+          <form class="email-form">
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">
+              <span class="material-symbols-outlined">send</span>
+            </button>
+          </form>
+        </section>
+
+        <section class="footer-column">
+          <h3>Support</h3>
+          <address>
+            111 Bijoy sarani, Dhaka, <br />
+            DH 1515, Bangladesh.<br />
+            <a href="mailto:exclusive@gmail.com">exclusive@gmail.com</a><br />
+            <a href="tel:+88015-88888-9999">+88015-88888-9999</a>
+          </address>
+        </section>
+
+        <section class="footer-column">
+          <h3>Account</h3>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Login / Register</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-column">
+          <h3>Quick Link</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-column download-app">
+          <h3>Download App</h3>
+          <p>Save $3 with App New User Only</p>
+          <div class="download-qr-codes">
+            <div class="qr-code">
+              <img src="path/to/qr_code.png" alt="QR code for app download" />
+            </div>
+            <div class="app-stores">
+              <a href="#"
+                ><img
+                  src="path/to/google_play_badge.png"
+                  alt="Get it on Google Play"
+              /></a>
+              <a href="#"
+                ><img
+                  src="path/to/app_store_badge.png"
+                  alt="Download on the App Store"
+              /></a>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="#" aria-label="Follow us on Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Follow us on Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" aria-label="Follow us on Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Follow us on LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; Copyright Rimel 2022. All right reserved</p>
+      </div>
+    </footer>
   </body>
 </html>

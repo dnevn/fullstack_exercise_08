@@ -29,7 +29,7 @@ body {
   padding-right: 5px;
 }
 
-.top-bar p a {
+.top-bar a {
   padding-left: 10px;
   font-weight: 600;
   color: white;
@@ -68,7 +68,7 @@ body {
   list-style: none;
 }
 
-.nav-links li a {
+.nav-links a {
   text-decoration: none;
   color: black;
 }
@@ -91,7 +91,6 @@ body {
 
 .search-bar input {
   padding: 5px 40px 5px 0px;
-  font-size: 14px;
   border: none;
   background-color: lightgray;
   border-radius: 2px;
@@ -107,7 +106,7 @@ body {
   pointer-events: none;
 }
 
-.nav-links li a:hover {
+.nav-links a:hover {
   text-decoration: underline;
   text-decoration-color: lightgray;
   text-decoration-thickness: 2px;
@@ -122,7 +121,7 @@ body {
   width: 25%;
   flex-direction: row;
   border-right: 2px solid gray;
-  padding: 2% 0 0 5%;
+  padding: 2% 0 1% 5%;
 }
 
 .side-menu {
@@ -137,12 +136,18 @@ body {
   list-style: none;
 }
 
-.side-menu li a {
+.side-menu a {
   display: block;
   width: 100%;
   text-decoration: none;
   color: black;
   position: relative;
+}
+
+.side-menu a:hover {
+  text-decoration: underline;
+  text-decoration-color: lightgray;
+  text-decoration-thickness: 2px;
 }
 
 .side-menu .material-symbols-outlined {
@@ -153,7 +158,7 @@ body {
 
 .hero-section {
   width: 75%;
-  padding: 2% 5% 0 0;
+  padding: 2% 5% 1% 0;
   display: flex;
   flex-direction: column;
 }
@@ -192,3 +197,86 @@ body {
 }
 
 /* Footer */
+.footer {
+  background-color: black;
+  padding: 0 5%;
+  border-bottom: 2px solid gray;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer-column {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.email-form {
+  position: relative;
+  display: inline-block;
+}
+
+.email-form input {
+  padding: 5px 40px 5px 0px;
+  border: 2px solid #fff;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.email-form .btn-email {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 5px;
+}
+
+.email-form .btn-email .material-symbols-outlined {
+  color: #fff;
+}
+
+.footer-column a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column li {
+  padding: 5px 0;
+}
+
+.footer-column li {
+  list-style: none;
+}
+
+.download-qr-codes {
+  display: flex;
+  gap: 5px;
+}
+
+.app-stores {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a span {
+  color: #fff;
+}
+
+/* Bot bar */
+.bot-bar {
+  padding: 12px 0;
+  background-color: black;
+  text-align: center;
+}
+.bot-bar p {
+  color: #fff;
+}
+
